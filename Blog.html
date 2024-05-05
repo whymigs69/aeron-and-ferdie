@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunway University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img
+            src="aeron itlog.png"
+            alt="Sunway uni logo"
+            class="uniLogo"
+          />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" id="closeBtn" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menuBtn" onclick="showMenu()"></i>
+      </nav>
+
+      <section class="headerDescWrapper">
+        <section class="headerDesc">
+          <h1>Our Certificates & Online Programmes For 2021</h1>
+        </section>
+      </section>
+    </header>
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="blog-left">
+        <div class="blogDetails">
+          <img
+            src="https://www.stjohns.edu/sites/default/files/styles/640w/public/2019-01/180815%20School%20of%20Ed%20Graduate%20Commencement%20%20%2823%29_1600x900.jpg?itok=f7gbMG5n"
+            alt=""
+          />
+          <h1>Our Certificate & Online Programs for 2021</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            vero est molestiae illo exercitationem aliquam qui dolor quasi
+            accusantium alias eum explicabo repellat aperiam architecto neque
+            nostrum nobis a ducimus similique, incidunt in quis dignissimos
+            porro rerum. Eaque, rem obcaecati!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde
+            magnam asperiores cum provident sequi nostrum placeat totam beatae
+            in, nobis aperiam dolores consequuntur facere deserunt aut ipsam ex
+            earum labore obcaecati quasi modi a. Excepturi, suscipit. Commodi
+            dolorem excepturi qui. Similique tenetur mollitia consequuntur
+            pariatur est animi totam voluptas!
+          </p>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            voluptas sed eum, illum, mollitia aliquid minus nostrum, corporis
+            accusantium quas neque ratione beatae placeat nihil. Illum, quis
+            exercitationem velit quae cupiditate eligendi quidem quam dolor
+            minus beatae eum itaque enim nobis rerum, nulla sunt doloribus ipsa.
+            Itaque, perferendis! Eum perspiciatis culpa illum reprehenderit esse
+            officiis consequuntur cupiditate illo quidem modi optio dolore,
+            voluptas, non neque.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui autem
+            architecto deserunt. Rem praesentium dolorum neque, reprehenderit
+            atque iste consequatur eveniet aspernatur officiis ipsam sunt quae
+            totam temporibus possimus nostrum.
+          </p>
+        </div>
+
+        <form action="">
+          <div class="inputContainer">
+            <h2>Leave a comment</h2>
+            <input type="text" placeholder="Enter name" />
+            <input type="email" placeholder="Enter Email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Comment Here"
+            ></textarea>
+            <a href="" class="red-btn">POST COMMENT</a>
+          </div>
+        </form>
+      </div>
+      <div class="blog-right">
+        <div class="categoriesContainer">
+          <h3>Post Categories</h3>
+
+          <div class="categories">
+            <p class="catType">Business Analytics</p>
+            <p class="typeNum">21</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Data Science</p>
+            <p class="typeNum">28</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Machine Learning</p>
+            <p class="typeNum">15</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Computer Science</p>
+            <p class="typeNum">34</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Auto CAD</p>
+            <p class="typeNum">42</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Journalism</p>
+            <p class="typeNum">22</p>
+          </div>
+          <div class="categories">
+            <p class="catType">Commerce</p>
+            <p class="typeNum">30</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerWrapper">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima non
+          quaerat voluptates reiciendis ullam possimus error <br />perferendis a
+          architecto obcaecati, ex ipsa accusantium, vitae nulla!
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <h5>Made By &copy; Brandon Lim</h5>
+      </div>
+    </footer>
+
+    <script>
+      var closeBtn = document.getElementById("closeBtn");
+      var menuBtn = document.getElementById("menuBtn");
+      var navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunway University</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img
+            src="aeron itlog.png"
+            alt="Sunway uni logo"
+            class="uniLogo"
+          />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" id="closeBtn" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menuBtn" onclick="showMenu()"></i>
+      </nav>
+
+      <section class="headerDescWrapper">
+        <section class="headerDesc">
+          <h1>About Us</h1>
+        </section>
+      </section>
+    </header>
+
+    <!-- About us -->
+    <section class="about-us">
+      <div class="description">
+        <h1>The Arellano University</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+          explicabo nesciunt ullam illo quo quibusdam aperiam aliquid aut
+          voluptatum dolor ipsam alias laborum unde enim, vitae natus ad quidem
+          modi ex atque, asperiores libero. Mollitia atque enim cum laudantium
+          consequatur ducimus repellendus sint consequuntur, iusto molestias
+          tempora in dolorum labore.
+        </p>
+        <a href="#" class="red-btn">EXPLORE NOW</a>
+      </div>
+
+      <div class="imgWrapper">
+        <img
+          src="https://university.sunway.edu.my/sites/default/files/webuni/SUB_0022.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerWrapper">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima non
+          quaerat voluptates reiciendis ullam possimus error <br />perferendis a
+          architecto obcaecati, ex ipsa accusantium, vitae nulla!
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <h5>Made By &copy; Brandon Lim</h5>
+      </div>
+    </footer>
+
+    <script>
+      var closeBtn = document.getElementById("closeBtn");
+      var menuBtn = document.getElementById("menuBtn");
+      var navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

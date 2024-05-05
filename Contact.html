@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunway University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img
+            src="aeron itlog.png"
+            alt="Sunway uni logo"
+            class="uniLogo"
+          />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" id="closeBtn" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menuBtn" onclick="showMenu()"></i>
+      </nav>
+
+      <section class="headerDescWrapper">
+        <section class="headerDesc">
+          <h1>Contact Us</h1>
+        </section>
+      </section>
+    </header>
+
+    <!-- Contact -->
+    <section class="contact-us">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.801809063878!2d120.99536447603886!3d14.553323378230537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9659a6d5cbf%3A0x690945f947d0d9e8!2sArellano%20University%20-%20Jose%20Abad%20Santos%20Campus!5e0!3m2!1sen!2sph!4v1714549352009!5m2!1sen!2sph"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="enquiries">
+        <div class="contact-details">
+          <div class="contact-method">
+            <i class="fa fa-home"></i>
+            <div class="methodText">
+              <h3>3058 Taft Ave, Pasay, Metro Manila</h3>
+              <h5>Petaling Jaya, Selangor</h5>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <i class="fa fa-phone"></i>
+            <div class="methodText">
+              <h3>+1234556778</h3>
+              <h5>Monday to Friday, 8.30am - 5.30pm</h5>
+              <h5>Saturday, 8.30am - 1.30pm</h5>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <i class="fa fa-envelope"></i>
+            <div class="methodText">
+              <h3>arellano.edu.email</h3>
+              <h5>Email Us</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="">
+            <input type="text" placeholder="Enter your Name" />
+            <input type="email" placeholder="Enter email address" />
+            <input type="text" placeholder="Enter your Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <a href="#" class="red-btn">Send Message</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerWrapper">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima non
+          quaerat voluptates reiciendis ullam possimus error <br />perferendis a
+          architecto obcaecati, ex ipsa accusantium, vitae nulla!
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <h5>Made By &copy; Brandon Lim</h5>
+      </div>
+    </footer>
+
+    <script>
+      var closeBtn = document.getElementById("closeBtn");
+      var menuBtn = document.getElementById("menuBtn");
+      var navLinks = document.getElementById("nav-links");
+
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
